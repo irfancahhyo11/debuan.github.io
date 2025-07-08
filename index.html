@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debuan — универсальная операционная система</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        #logo {
+            background-color: #d70a53;
+            padding: 10px 20px;
+            text-align: left;
+        }
+        
+        #logo img {
+            vertical-align: middle;
+        }
+        
+        #nav {
+            background-color: #c70036;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #nav li {
+            margin: 0;
+        }
+        
+        #nav li a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            border-right: 1px solid #a00030;
+        }
+        
+        #nav li a:hover {
+            background-color: #a00030;
+        }
+        
+        #content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        #content h1 {
+            color: #d70a53;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d70a53;
+            padding-bottom: 10px;
+        }
+        
+        #content h2 {
+            color: #c70036;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        #content ul {
+            margin-left: 20px;
+        }
+        
+        #content ul li {
+            margin-bottom: 8px;
+        }
+        
+        #content a {
+            color: #0084c7;
+            text-decoration: none;
+        }
+        
+        #content a:hover {
+            text-decoration: underline;
+        }
+        
+        #footer {
+            background-color: #f5f5f5;
+            border-top: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            #nav {
+                flex-direction: column;
+            }
+            
+            #nav li a {
+                border-right: none;
+                border-bottom: 1px solid #a00030;
+            }
+            
+            #content {
+                margin: 10px;
+                padding: 0 10px;
+            }
+            
+            #content h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
 
+<div id="logo">
+<a href="/"><img src="https://www.debian.org/Pics/openlogo-nd.svg" alt="Debuan" height="60"></a>
+</div>
+<ul id="nav">
+<li><a href="/">Главная</a></li>
+<li><a href="/CD/">Загрузки</a></li>
+<li><a href="https://wiki.debian.org/">Документация</a></li>
+<li><a href="https://www.debian.org/support">Поддержка</a></li>
+<li><a href="https://www.debian.org/devel/">Разработка</a></li>
+</ul>
+
+<div id="content">
+<h1>Debuan — универсальная операционная система</h1>
+<p>
+Debuan — это свободная операционная система для вашего компьютера. Это форк Debian, в котором отсутствует systemd. Debuan сохраняет классическую инициализацию и даёт пользователю полный контроль над системой.
+</p>
+<h2>Почему Debuan?</h2>
+<ul>
+<li>Основан на Debian, но без systemd</li>
+<li>Свобода выбора init-системы</li>
+<li>Надёжность и прозрачность</li>
+<li>Сообщество единомышленников</li>
+</ul>
+<p>
+Подробнее читайте на <a href="/about">странице о проекте</a>.
+</p>
+<h2>Скачать Debuan</h2>
+<p>
+Посетите <a href="/CD/">страницу загрузки</a>, чтобы выбрать подходящий ISO-образ для установки Debuan.
+</p>
+</div>
+<div id="footer">
+<p>
+&copy; Debuan Project. Основано на Debian. Форк без systemd.
+</p>
+</div>
+
+</body>
+</html>
