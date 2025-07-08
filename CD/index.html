@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка образов Debuan</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        #logo {
+            background-color: #d70a53;
+            padding: 10px 20px;
+            border-bottom: 3px solid #a70040;
+        }
+        
+        #logo a {
+            text-decoration: none;
+        }
+        
+        #logo img {
+            vertical-align: middle;
+        }
+        
+        #nav {
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #cccccc;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #nav li {
+            margin: 0;
+        }
+        
+        #nav li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333333;
+            border-right: 1px solid #cccccc;
+        }
+        
+        #nav li a:hover {
+            background-color: #e0e0e0;
+        }
+        
+        #content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        
+        #content h1 {
+            color: #d70a53;
+            border-bottom: 2px solid #d70a53;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #content ul {
+            margin: 20px 0;
+        }
+        
+        #content li {
+            margin: 10px 0;
+        }
+        
+        #content a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        #content a:hover {
+            text-decoration: underline;
+        }
+        
+        #footer {
+            background-color: #f0f0f0;
+            border-top: 1px solid #cccccc;
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            color: #666666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            #nav {
+                flex-direction: column;
+            }
+            
+            #nav li a {
+                border-right: none;
+                border-bottom: 1px solid #cccccc;
+            }
+            
+            #content {
+                margin: 10px auto;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <a href="/"><img src="https://www.debian.org/Pics/openlogo-nd.svg" alt="Debuan" height="60"></a>
+    </div>
+    <ul id="nav">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/CD/">Загрузки</a></li>
+        <li><a href="https://wiki.debian.org/">Документация</a></li>
+        <li><a href="https://www.debian.org/support">Поддержка</a></li>
+        <li><a href="https://www.debian.org/devel/">Разработка</a></li>
+    </ul>
+
+    <div id="content">
+        <h1>Загрузка образов Debuan</h1>
+        <p>
+            Выберите подходящий ISO-образ для вашей архитектуры. Debuan — система, свободная от systemd.
+        </p>
+        <ul>
+            <li><a href="https://cdimage.debuan.org/debuan-cd/current/amd64/iso-cd/">Образы для amd64</a></li>
+            <li><a href="https://cdimage.debuan.org/debuan-cd/current/i386/iso-cd/">Образы для i386</a></li>
+            <li><a href="https://cdimage.debuan.org/debuan-cd/current/arm64/iso-cd/">Образы для ARM64</a></li>
+            <li><a href="https://cdimage.debuan.org/debuan-cd/current/source/iso-cd/">Исходные образы</a></li>
+        </ul>
+        <p>
+            Инструкция по установке доступна в разделе <a href="https://wiki.debian.org/InstallingDebian">Документация</a>.
+        </p>
+    </div>
+    <div id="footer">
+        <p>
+            &copy; Debuan Project. Основано на Debian. Форк без systemd.
+        </p>
+    </div>
+</body>
+</html>
